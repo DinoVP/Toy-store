@@ -1,0 +1,381 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\Khuyenmai.html",
+      "PackagePath": "staticwebassets\\Khuyenmai.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\bup-be.html",
+      "PackagePath": "staticwebassets\\bup-be.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\do-choi-lap-ghep.html",
+      "PackagePath": "staticwebassets\\do-choi-lap-ghep.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\hangmoi.html",
+      "PackagePath": "staticwebassets\\hangmoi.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\anhnen.png",
+      "PackagePath": "staticwebassets\\images\\anhnen.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\banner.png",
+      "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\banner1.png",
+      "PackagePath": "staticwebassets\\images\\banner1.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp1.png",
+      "PackagePath": "staticwebassets\\images\\sp1.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp10.png",
+      "PackagePath": "staticwebassets\\images\\sp10.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp11.png",
+      "PackagePath": "staticwebassets\\images\\sp11.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp12.png",
+      "PackagePath": "staticwebassets\\images\\sp12.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp13.png",
+      "PackagePath": "staticwebassets\\images\\sp13.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp14.png",
+      "PackagePath": "staticwebassets\\images\\sp14.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp15.png",
+      "PackagePath": "staticwebassets\\images\\sp15.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp16.png",
+      "PackagePath": "staticwebassets\\images\\sp16.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp17.png",
+      "PackagePath": "staticwebassets\\images\\sp17.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp18.png",
+      "PackagePath": "staticwebassets\\images\\sp18.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp19.png",
+      "PackagePath": "staticwebassets\\images\\sp19.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp2.png",
+      "PackagePath": "staticwebassets\\images\\sp2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp20.png",
+      "PackagePath": "staticwebassets\\images\\sp20.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp3.png",
+      "PackagePath": "staticwebassets\\images\\sp3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp4.png",
+      "PackagePath": "staticwebassets\\images\\sp4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp5.png",
+      "PackagePath": "staticwebassets\\images\\sp5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp6.png",
+      "PackagePath": "staticwebassets\\images\\sp6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp7.png",
+      "PackagePath": "staticwebassets\\images\\sp7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp8.png",
+      "PackagePath": "staticwebassets\\images\\sp8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp9.png",
+      "PackagePath": "staticwebassets\\images\\sp9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox1.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox1.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox2.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox3.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox4.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox5.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox6.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox7.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox8.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\sp_blox9.png",
+      "PackagePath": "staticwebassets\\images\\sp_blox9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb.png",
+      "PackagePath": "staticwebassets\\images\\spbb.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb2.png",
+      "PackagePath": "staticwebassets\\images\\spbb2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb3.png",
+      "PackagePath": "staticwebassets\\images\\spbb3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb4.png",
+      "PackagePath": "staticwebassets\\images\\spbb4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb5.png",
+      "PackagePath": "staticwebassets\\images\\spbb5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb6.png",
+      "PackagePath": "staticwebassets\\images\\spbb6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb7.png",
+      "PackagePath": "staticwebassets\\images\\spbb7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb8.png",
+      "PackagePath": "staticwebassets\\images\\spbb8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spbb9.png",
+      "PackagePath": "staticwebassets\\images\\spbb9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg.png",
+      "PackagePath": "staticwebassets\\images\\spdclg.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg2.png",
+      "PackagePath": "staticwebassets\\images\\spdclg2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg3.png",
+      "PackagePath": "staticwebassets\\images\\spdclg3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg4.png",
+      "PackagePath": "staticwebassets\\images\\spdclg4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg5.png",
+      "PackagePath": "staticwebassets\\images\\spdclg5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg6.png",
+      "PackagePath": "staticwebassets\\images\\spdclg6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg7.png",
+      "PackagePath": "staticwebassets\\images\\spdclg7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg8.png",
+      "PackagePath": "staticwebassets\\images\\spdclg8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spdclg9.png",
+      "PackagePath": "staticwebassets\\images\\spdclg9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkd5.png",
+      "PackagePath": "staticwebassets\\images\\spkd5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc.png",
+      "PackagePath": "staticwebassets\\images\\spkdc.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc2.png",
+      "PackagePath": "staticwebassets\\images\\spkdc2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc3.png",
+      "PackagePath": "staticwebassets\\images\\spkdc3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc4.png",
+      "PackagePath": "staticwebassets\\images\\spkdc4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc5.png",
+      "PackagePath": "staticwebassets\\images\\spkdc5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc6.png",
+      "PackagePath": "staticwebassets\\images\\spkdc6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc7.png",
+      "PackagePath": "staticwebassets\\images\\spkdc7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc8.png",
+      "PackagePath": "staticwebassets\\images\\spkdc8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spkdc9.png",
+      "PackagePath": "staticwebassets\\images\\spkdc9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt.png",
+      "PackagePath": "staticwebassets\\images\\spptgt.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt2.png",
+      "PackagePath": "staticwebassets\\images\\spptgt2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt3.png",
+      "PackagePath": "staticwebassets\\images\\spptgt3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt4.png",
+      "PackagePath": "staticwebassets\\images\\spptgt4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt5.png",
+      "PackagePath": "staticwebassets\\images\\spptgt5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt6.png",
+      "PackagePath": "staticwebassets\\images\\spptgt6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt7.png",
+      "PackagePath": "staticwebassets\\images\\spptgt7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt8.png",
+      "PackagePath": "staticwebassets\\images\\spptgt8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spptgt9.png",
+      "PackagePath": "staticwebassets\\images\\spptgt9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah.png",
+      "PackagePath": "staticwebassets\\images\\spsah.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah2.png",
+      "PackagePath": "staticwebassets\\images\\spsah2.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah3.png",
+      "PackagePath": "staticwebassets\\images\\spsah3.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah4.png",
+      "PackagePath": "staticwebassets\\images\\spsah4.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah5.png",
+      "PackagePath": "staticwebassets\\images\\spsah5.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah6.png",
+      "PackagePath": "staticwebassets\\images\\spsah6.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah7.png",
+      "PackagePath": "staticwebassets\\images\\spsah7.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah8.png",
+      "PackagePath": "staticwebassets\\images\\spsah8.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\images\\spsah9.png",
+      "PackagePath": "staticwebassets\\images\\spsah9.png"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\js\\slider.js",
+      "PackagePath": "staticwebassets\\js\\slider.js"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\keo-do-choi.html",
+      "PackagePath": "staticwebassets\\keo-do-choi.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\phuong-tien-giao-thong.html",
+      "PackagePath": "staticwebassets\\phuong-tien-giao-thong.html"
+    },
+    {
+      "Id": "G:\\Nâng Cao C#\\shop toy\\shop toy\\wwwroot\\sieu-anh-hung.html",
+      "PackagePath": "staticwebassets\\sieu-anh-hung.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.shop toy.props",
+      "PackagePath": "build\\shop toy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.shop toy.props",
+      "PackagePath": "buildMultiTargeting\\shop toy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.shop toy.props",
+      "PackagePath": "buildTransitive\\shop toy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.shop toy.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.shop toy.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

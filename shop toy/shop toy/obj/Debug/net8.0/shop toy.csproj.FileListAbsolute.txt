@@ -1,0 +1,30 @@
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\appsettings.Development.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\appsettings.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.staticwebassets.runtime.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.staticwebassets.endpoints.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.exe
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.deps.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.runtimeconfig.json
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.dll
+G:\Nâng Cao C#\shop toy\shop toy\bin\Debug\net8.0\shop toy.pdb
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.GeneratedMSBuildEditorConfig.editorconfig
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.AssemblyInfoInputs.cache
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.AssemblyInfo.cs
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.csproj.CoreCompileInputs.cache
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.MvcApplicationPartsAssemblyInfo.cache
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\scopedcss\bundle\shop toy.styles.css
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets.build.json
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets.development.json
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets\msbuild.shop toy.Microsoft.AspNetCore.StaticWebAssets.props
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets\msbuild.shop toy.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets\msbuild.build.shop toy.props
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.shop toy.props
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.shop toy.props
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets.pack.json
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.dll
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\refint\shop toy.dll
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.pdb
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\shop toy.genruntimeconfig.cache
+G:\Nâng Cao C#\shop toy\shop toy\obj\Debug\net8.0\ref\shop toy.dll

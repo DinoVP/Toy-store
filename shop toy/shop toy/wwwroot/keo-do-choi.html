@@ -1,0 +1,938 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>TOY STORE SHOP</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* THANH TRẮNG */
+        .top-white-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            height: 55px;
+        }
+
+        .site-title {
+            font-size: 26px;
+            font-weight: 900;
+            color: #d64d3f;
+            text-transform: uppercase;
+        }
+
+        /* SEARCH BAR */
+        .center-section {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 380px;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px 0 0 6px;
+        }
+
+        .search-btn {
+            padding: 8px 12px;
+            background: #eaeaea;
+            border: 1px solid #ccc;
+            border-left: 0;
+            cursor: pointer;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* RIGHT SECTION */
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .login-btn {
+            text-decoration: none;
+            font-weight: bold;
+            color: #d64d3f;
+            cursor: pointer;
+        }
+
+        .cart {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cart-price {
+            font-weight: bold;
+            color: #d64d3f;
+        }
+
+        /* THANH ĐỎ */
+        .top-red-bar {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            height: 55px;
+            background: #d64d3f;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+            .menu li a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+                .menu li a:hover {
+                    color: yellow;
+                }
+
+        /* SLIDER */
+        .slider {
+            margin-top: 140px;
+            max-width: 1250px;
+            width: 100%;
+            aspect-ratio: 16/6;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            display: none;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+            .slide.active {
+                display: block;
+                opacity: 1;
+            }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.35);
+            border: none;
+            color: white;
+            font-size: 35px;
+            padding: 8px 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+            .prev:hover, .next:hover {
+                background: rgba(0,0,0,0.6);
+            }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* PRODUCT SECTION */
+        .product-section {
+            max-width: 1250px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section-title-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .title-label {
+            background: #ff6f22;
+            color: white;
+            padding: 8px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .title-line {
+            flex: 1;
+            height: 3px;
+            background: #ff6f22;
+            border-radius: 3px;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .product-img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .product-name {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        .product-price {
+            margin-top: 5px;
+            font-weight: bold;
+            color: #d64d3f;
+        }
+
+        /* SECTION 10 PRODUCT */
+        .product-section-10 {
+            display: flex;
+            gap: 15px;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .side-vertical-box {
+            width: 220px;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            .side-vertical-box img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .grid-10 {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 12px;
+            width: 100%;
+            padding: 15px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+            .grid-10 .item {
+                background: #fdfdfd;
+                border-radius: 10px;
+                overflow: hidden;
+                text-align: center;
+                padding: 5px;
+                transition: transform 0.25s;
+                cursor: pointer;
+            }
+
+                .grid-10 .item:hover {
+                    transform: translateY(-5px);
+                }
+
+            .grid-10 img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+            }
+
+            .grid-10 .name {
+                font-weight: bold;
+                margin: 3px 5px;
+            }
+
+            .grid-10 .price {
+                margin: 0 5px 5px;
+                color: #ff6f22;
+            }
+
+        /* LOGIN MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background: white;
+            width: 350px;
+            padding: 25px;
+            margin: 10% auto;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+            .modal-content h2 {
+                margin-bottom: 20px;
+                color: #d64d3f;
+            }
+
+            .modal-content label {
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .modal-content input {
+                width: 100%;
+                padding: 8px 10px;
+                margin-top: 5px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+            }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .login-btn-modal,
+        .forgot-btn {
+            padding: 8px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-btn-modal {
+            background-color: #d64d3f;
+            color: white;
+        }
+
+        .forgot-btn {
+            background: #eee;
+        }
+
+        .close {
+            position: absolute;
+            top: 12px;
+            right: 15px;
+            font-size: 26px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- THANH TRẮNG -->
+    <div class="top-white-bar">
+        <div class="left-section">
+            <img src="images/logo.png" class="logo" />
+            <span class="site-title">TOY STORE SHOP</span>
+        </div>
+
+        <div class="center-section">
+            <input type="text" placeholder="Tìm kiếm sản phẩm..." class="search-input" />
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="right-section">
+            <span class="login-btn">Đăng nhập</span>
+            <div class="cart">
+                <span>🛒</span>
+                <span class="cart-price">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- THANH ĐỎ -->
+    <div class="top-red-bar">
+        <ul class="menu">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="hangmoi.html">HÀNG MỚI </a></li>
+            <li><a href="#">THƯƠNG HIỆU</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="Khuyenmai.html">KHUYẾN MÃI</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider">
+        <div class="slide active" style="background-image:url('images/banner.png')"></div>
+        <div class="slide" style="background-image:url('images/banner1.png')"></div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <main class="content">
+        <h1>Chào mừng đến Toy Store Shop</h1>
+    </main>
+
+    <!-- LAYOUT 2 CỘT: DANH MỤC TRÁI + SẢN PHẨM PHẢI -->
+    <div style="display:flex; max-width:1250px; margin:40px auto; gap:25px;">
+
+        <!-- CỘT TRÁI - DANH MỤC -->
+        <div style="
+            width:260px;
+            background:white;
+            border-radius:10px;
+            padding:20px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+            height:max-content;
+            ">
+            <h2 style="font-size:20px; color:#d64d3f; margin-bottom:15px;">Danh Mục</h2>
+
+            <ul class="category-list">
+                <li class="menu-box" data-url="sieu-anh-hung.html">
+                    Siêu anh hùng <span class="arrow">></span>
+                </li>
+
+                <li class="menu-box" data-url="phuong-tien-giao-thong.html">
+                    Phương tiện giao thông <span class="arrow">></span>
+                </li>
+
+                <li class="menu-box" data-url="keo-do-choi.html">
+                    Kẹo đồ chơi <span class="arrow">></span>
+                </li>
+
+                <li class="menu-box" data-url="do-choi-lap-ghep.html">
+                    Đồ chơi lắp ghép <span class="arrow">></span>
+                </li>
+
+                <li class="menu-box" data-url="bup-be.html">
+                    Búp bê <span class="arrow">></span>
+                </li>
+            </ul>
+            <style>
+                .category-list .menu-box {
+                    cursor: pointer;
+                    padding: 8px 0;
+                    transition: 0.2s;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .category-list .menu-box:hover {
+                        color: #d64d3f;
+                        transform: translateX(4px);
+                    }
+
+                    .category-list .menu-box .arrow {
+                        transition: 0.2s;
+                    }
+
+                    .category-list .menu-box:hover .arrow {
+                        margin-left: 6px;
+                    }
+            </style>
+
+            <script>
+                // Gán click đúng cách
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.querySelectorAll(".menu-box").forEach(item => {
+                        item.addEventListener("click", function () {
+                            let url = this.getAttribute("data-url");
+                            if (url) {
+                                window.location.href = url;
+                            }
+                        });
+                    });
+                });
+            </script>
+        </div>
+
+        <!-- CỘT PHẢI - SẢN PHẨM -->
+        <div style="flex:1;">
+
+            <!-- HEADER -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <div style="font-size:16px; color:#666;">
+                    Kiểu xem:
+                    <span style="margin-left:10px; cursor:pointer;">🔳</span>
+                    <span style="margin-left:5px; cursor:pointer;">📄</span>
+                </div>
+
+
+
+                <div>
+                    Sắp xếp theo:
+                    <span style="font-weight:bold; cursor:pointer;">Mặc định ▼</span>
+                </div>
+            </div>
+
+            <!-- PRODUCT GRID -->
+            <div style="
+                display:grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap:25px;
+            ">
+
+                <!-- SP1 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Kẹo có mô hình xe </p>
+                    <p style="color:#d64d3f; font-weight:bold;">40,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP2 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc2.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi trứng khủng long</p>
+                    <p style="color:#d64d3f; font-weight:bold;">20,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP3 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc3.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Máy kẹo casio</p>
+                    <p style="color:#d64d3f; font-weight:bold;">40,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP4 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc4.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi kẹo điện thoại </p>
+                    <p style="color:#d64d3f; font-weight:bold;">50,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP5 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc5.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi kẹo hột nhãn </p>
+                    <p style="color:#d64d3f; font-weight:bold;">100,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+                <!-- SP6 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc6.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi kẹo nổ  </p>
+                    <p style="color:#d64d3f; font-weight:bold;">50,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP7 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc7.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi kẹo đông  </p>
+                    <p style="color:#d64d3f; font-weight:bold;">80,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP8 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc8.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">Đồ chơi kẹo pokemon  </p>
+                    <p style="color:#d64d3f; font-weight:bold;">30,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+                </div>
+
+                <!-- SP9 -->
+                <div style="border:1px solid #eee; border-radius:10px; padding:15px; text-align:center; position:relative;">
+                    <span style="
+                        background:#d64d3f;
+                        color:white;
+                        padding:3px 10px;
+                        border-radius:5px;
+                        font-size:12px;
+                        position:absolute;
+                        top:10px;
+                        left:10px;
+                    ">NEW</span>
+
+                    <img src="images/spkdc9.png" style="width:100%; height:220px; object-fit:contain;">
+                    <p style="font-weight:bold; margin-top:10px;">đồ chơi kẹo gậy phát sáng </p>
+                    <p style="color:#d64d3f; font-weight:bold;">30,000đ</p>
+                    <button class="btn-add-cart"
+                            onclick="alert('Đã thêm vào giỏ hàng!')"
+                            style="
+                            padding: 12px 22px;
+                            background-color: #ff4d4d;
+                            color: white;
+                            border: none;
+                            border-radius: 6px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            cursor: pointer;
+                            transition: transform 0.25s ease, background-color 0.25s ease;
+                        "
+                            onmouseover="this.style.transform='scale(1.08)'; this.style.backgroundColor='#ff3333';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#ff4d4d';">
+                        Thêm Vào Giỏ Hàng
+                    </button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2>Đăng nhập</h2>
+
+            <label>Tên đăng nhập</label>
+            <input type="text" placeholder="Nhập tên">
+
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="Nhập mật khẩu">
+
+            <div class="btn-group">
+                <button class="login-btn-modal">Đăng nhập</button>
+                <button class="forgot-btn">Quên mật khẩu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        // SLIDER
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(i) {
+            slides.forEach(s => s.classList.remove("active"));
+            slides[i].classList.add("active");
+        }
+
+        document.querySelector(".next").onclick = () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        };
+
+        document.querySelector(".prev").onclick = () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        };
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 5000);
+
+        // LOGIN MODAL
+        const modal = document.getElementById("loginModal");
+        const loginBtn = document.querySelector(".login-btn");
+        const closeBtn = document.querySelector(".close");
+
+        loginBtn.onclick = () => modal.style.display = "block";
+        closeBtn.onclick = () => modal.style.display = "none";
+
+        window.onclick = (e) => {
+            if (e.target === modal) modal.style.display = "none";
+        };
+    </script>
+
+</body>
+</html>
