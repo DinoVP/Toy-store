@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VST\\toyshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|d:\\vst\\toyshop\\toyshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|solutionrelative:toyshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|d:\\vst\\toyshop\\toyshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|solutionrelative:toyshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|d:\\vst\\toyshop\\toyshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|solutionrelative:toyshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|d:\\vst\\toyshop\\toyshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|solutionrelative:toyshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|d:\\vst\\toyshop\\toyshop\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C98E2E99-9037-4F9C-949D-FC92F77C1729}|toyshop\\toyshop.csproj|solutionrelative:toyshop\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VST\\toyshop\\toyshop\\Program.cs",
+              "RelativeDocumentMoniker": "toyshop\\Program.cs",
+              "ToolTip": "D:\\VST\\toyshop\\toyshop\\Program.cs",
+              "RelativeToolTip": "toyshop\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T01:51:09.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\VST\\toyshop\\toyshop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "toyshop\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\VST\\toyshop\\toyshop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "toyshop\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T13:30:50.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\VST\\toyshop\\toyshop\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "toyshop\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\VST\\toyshop\\toyshop\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "toyshop\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-25T13:15:08.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\VST\\toyshop\\toyshop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "toyshop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\VST\\toyshop\\toyshop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "toyshop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T13:04:10.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\VST\\toyshop\\toyshop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "toyshop\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\VST\\toyshop\\toyshop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "toyshop\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:57:50.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 74,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
