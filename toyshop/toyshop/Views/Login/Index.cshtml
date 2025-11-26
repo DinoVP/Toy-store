@@ -1,0 +1,135 @@
+﻿@{
+    ViewBag.Title = "Đăng Nhập";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .form-section { padding: 40px; }
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: @(ViewBag.Error != null ? "block" : "none");
+        }
+        .role-selector { margin-bottom: 30px; }
+        .role-selector label { display: block; font-weight: 600; color: #333; margin-bottom: 10px; }
+        .role-options { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+        .role-option input[type="radio"] { display: none; }
+        .role-label {
+            display: block;
+            padding: 15px 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .role-option input[type="radio"]:checked + .role-label {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; color: #333; font-weight: 500; }
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group input:focus { outline: none; border-color: #667eea; }
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-login:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎀 ToyShop</h1>
+            <p>Hệ thống quản lý cửa hàng đồ chơi</p>
+        </div>
+
+        <div class="form-section">
+            @if (ViewBag.Error != null)
+            {
+                <div class="error-message">@ViewBag.Error</div>
+            }
+
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                <div class="role-selector">
+                    <label>Chọn vai trò đăng nhập:</label>
+                    <div class="role-options">
+                        <div class="role-option">
+                            <input type="radio" id="admin" name="role" value="admin" required>
+                            <label for="admin" class="role-label">👨‍💼 Admin</label>
+                        </div>
+                        <div class="role-option">
+                            <input type="radio" id="staff" name="role" value="staff" required>
+                            <label for="staff" class="role-label">👨‍💻 Nhân viên</label>
+                        </div>
+                        <div class="role-option">
+                            <input type="radio" id="customer" name="role" value="customer" required>
+                            <label for="customer" class="role-label">👤 Khách hàng</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Tên đăng nhập</label>
+                    <input type="text" name="username" placeholder="Nhập tên đăng nhập" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input type="password" name="password" placeholder="Nhập mật khẩu" required>
+                </div>
+
+                <button type="submit" class="btn-login">Đăng Nhập</button>
+            }
+        </div>
+    </div>
+</body>
+</html>
